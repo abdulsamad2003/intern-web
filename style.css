@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-royal-blue: #23262f;
+  --golden: #aa946c;
+  --text-color: #f9f9f9;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+.main-page {
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  background: var(--main-royal-blue);
+  width: 100%;
+}
+.nav img {
+  margin-left: 30px;
+  width: 8rem;
+}
+.main-content {
+  width: 100%;
+}
+.main-text {
+  padding-top: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+.main-text h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 60%;
+}
+.main-text p {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  width: 30%;
+}
+.main-photos {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-photos .photos-male {
+  background: var(--main-royal-blue);
+  height: 40rem;
+  width: 30%;
+  border-radius: 203px;
+  z-index: -1;
+  position: relative;
+  display: flex;
+}
+.main-photos .photos-male img {
+  height: 22rem;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 180px;
+  margin: 0 auto;
+}
+
+.main-photos .photos-female {
+  background: var(--golden);
+  display: flex;
+  height: 35rem;
+  width: 30%;
+  border-radius: 203px;
+  position: relative;
+  z-index: -1;
+}
+
+.main-photos .photos-female img {
+  height: 22rem;
+
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 120px;
+  margin: 0 auto;
+}
+
+.find-job-part {
+  background: var(--main-royal-blue);
+  margin-top: -180px;
+  z-index: 11;
+  /* height: 80vh; */
+}
+.find-job-content {
+  margin-top: 40px;
+}
+.headings {
+  color: var(--text-color);
+}
+.headings h1 {
+  font-size: 1.6rem;
+}
+.headings i {
+  font-size: 0.8rem;
+}
+
+.card-container {
+  padding-top: 30px;
+  height: 100%;
+  display: grid;
+  margin: 3% auto;
+  width: 90%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: var(--text-color);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 13% 0;
+  border-radius: 15px;
+  transition: 1s ease;
+}
+.card img {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+.card h1 {
+  padding-top: 15px;
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 100%;
+  color: var(--main-royal-blue);
+}
+.card:hover {
+  background: var(--main-royal-blue);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+.card:hover h1 {
+  color: #f9f9f9;
+}
+
+@media (max-width: 1024px) {
+  .main-text h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .main-text p {
+    font-size: 0.7rem;
+  }
+  .main-photos .photos-male {
+    height: 35rem;
+  }
+  .main-photos .photos-male img {
+    top: 80px;
+  }
+  .main-photos .photos-female {
+    height: 30rem;
+  }
+
+  .main-photos .photos-female img {
+    top: 60px;
+  }
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .card img {
+    width: 60px;
+    height: 60px;
+  }
+  .card h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-text h1 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-right: 4%;
+  }
+  .main-text p {
+    font-size: 0.6rem;
+    width: 70%;
+  }
+
+  .main-photos {
+    display: block;
+  }
+
+  .main-photos .photos-male {
+    height: 22rem;
+    overflow: hidden;
+    width: 70%;
+    margin: 4% auto;
+    border-radius: 203px 203px 0 0;
+  }
+  .main-photos .photos-male img {
+    top: 52px;
+  }
+
+  .main-photos .photos-female {
+    height: 22rem;
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 203px 203px 0 0;
+  }
+
+  .main-photos .photos-female img {
+    top: 40px;
+  }
+
+  .find-job-part {
+    margin-top: 0;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+  .card h1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .main-text h1 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-right: 4%;
+  }
+  .main-text p {
+    font-size: 0.6rem;
+    width: 70%;
+  }
+
+  .main-photos .photos-female img {
+    top: 55px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+  .card h1 {
+    font-size: 1rem;
+  }
+}
