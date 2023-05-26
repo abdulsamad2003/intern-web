@@ -129,6 +129,7 @@ section {
   padding: 13% 0;
   border-radius: 15px;
   transition: 1s ease;
+  overflow: hidden;
 }
 .card img {
   margin: 0 auto;
@@ -150,6 +151,116 @@ section {
 }
 .card:hover h1 {
   color: #f9f9f9;
+}
+
+.mid-section {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.mid-upper-part {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.browse {
+  background: var(--main-royal-blue);
+  width: 30%;
+}
+.browse h1 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  padding: 15px 0;
+  text-align: center;
+}
+.links {
+  margin: 0 5%;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+a:nth-child(1) {
+  color: var(--golden);
+}
+.lower-part {
+  margin: 5% auto 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  background: var(--main-royal-blue);
+  width: 26%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.inputs {
+  display: block;
+  margin: 40px auto;
+}
+.inputs div {
+  width: 100%;
+  margin: 10% auto;
+  text-align: center;
+  color: var(--text-color);
+}
+.inputs div input {
+  border-radius: 3px;
+  margin: 10px 0;
+  height: 40px;
+  width: 80%;
+}
+.inputs div input::placeholder {
+  color: #f9f9f9;
+  font-size: 0.9rem;
+}
+.lower-content {
+  background: #f9f9f9;
+  width: 65%;
+}
+.lower-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+.lower-left-up {
+  margin: 40px 0 0 40px;
+}
+.lower-left-up h1 {
+  font-size: 1.3rem;
+}
+
+.location div {
+  display: flex;
+  margin: 4% 0;
+  color: #777777;
+}
+.location div h3 {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.btns {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+}
+.btns button {
+  border: none;
+  background: var(--golden);
+  color: #f9f9f9;
+  padding: 5px 20px;
+  border-radius: 3px;
+}
+.btn1 {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -183,6 +294,18 @@ section {
   }
   .card h1 {
     font-size: 1.2rem;
+  }
+  .browse h1 {
+    font-size: 1.2rem;
+  }
+
+  .links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  .form {
+    width: 32%;
   }
 }
 
@@ -239,6 +362,37 @@ section {
   .card h1 {
     font-size: 1rem;
   }
+  .mid-section {
+    padding-top: 20px;
+  }
+  .mid-upper-part {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .browse {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+  }
+  .links {
+    margin: 3% auto;
+    flex-wrap: wrap;
+  }
+  .links a {
+    font-size: 0.9rem;
+  }
+  .lower-part {
+    display: block;
+  }
+  .form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .lower-content {
+    width: 100%;
+    margin: 4% auto;
+  }
 }
 @media (max-width: 425px) {
   .main-text h1 {
@@ -265,5 +419,36 @@ section {
   }
   .card h1 {
     font-size: 1rem;
+  }
+  .mid-upper-part {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .browse {
+    margin: 0 auto;
+    border-radius: 0;
+    width: 100%;
+  }
+  .links {
+    width: 95%;
+  }
+  .links a {
+    font-size: 0.9rem;
+  }
+  .lower-left{
+    display: block;
+  }
+  .lower-left-up{
+    text-align: start;
+    margin:  40px 0;
+  }
+
+  .location div{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .btns{
+    text-align: end;
   }
 }
